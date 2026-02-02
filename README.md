@@ -46,28 +46,4 @@ Arrange the buttons in a 3×4 matrix and scan rows and columns to detect presses
 2. **Perfboard / wiring harness** – stabilize the circuit + controls    
 3. **PCB revision** – make it reproducible    
 4. **Enclosure** – finish it like a real instrument    
-  
-## Documentation philosophy  
-This repo is meant to be readable by:  
-- builders who like solder smoke and progress    
-- firmware folks who want to tweak DSP parameters    
-- curious humans who want to learn synthesis by touching it    
-  
-## Contributing  
-PRs are welcome—especially:  
-- BOM improvements + alternate parts    
-- calibration/test procedures    
-- sound demos + patch ideas    
-- PCB review and layout suggestions    
-  
-## License  
-TBD (recommended: **CERN-OHL-P** for hardware + **MIT** for firmware), unless we decide otherwise.  
-  
-## Credits / Inspiration  
-Crayonics Edition is inspired by lo-fi synthesis culture and the idea that instruments should be *fun*, not fragile.  
-  
----  
-  
-### Status  
-**Early build + documentation phase.**    
-Expect rapid iteration and messy notes (the good kind).
+---
