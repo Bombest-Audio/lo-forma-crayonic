@@ -11,6 +11,16 @@ This project is designed as a **tutorial series** and a **shareable reference bu
 - **Hands-on hardware build** you can actually finish    
 - **Firmware + DSP playground** for experimenting with sound    
   
+## Octave of Buttons (12-Key Input)  
+
+To support a playable octave of keys, you can add 12 momentary buttons and wire them into the Lo Forma: Crayonic Edition in one of two ways:  
+
+### Option A – Direct GPIO connections  
+Each button connects to its own GPIO pin on the Pico with an appropriate pull‑up or pull‑down resistor. This approach is straightforward and offers minimal latency, but it uses 12 pins and can lead to messy wiring.  
+
+### Option B – Matrix or I²C expander  
+Arrange the buttons in a 3×4 matrix and scan rows and columns to detect presses using just seven pins, or use an I²C GPIO expander (for example, PCF8574 or MCP23017) to read all buttons over two I²C lines. This conserves pins and scales better, at the cost of slightly more complex wiring and firmware.
+
 ## Goals  
 - Make something that sounds *alive* without needing a DAW.    
 - Keep the build approachable: each stage is usable even if you stop early.    
